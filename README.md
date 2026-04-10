@@ -38,7 +38,7 @@ go build -o passgen main.go
 sudo mv passgen /usr/local/bin/  # Linux/macOS
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Basic Usage
 
