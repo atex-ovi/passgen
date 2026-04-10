@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-	// Command line flags
 	length := flag.Int("l", 12, "Password length")
 	special := flag.Bool("s", false, "Include special characters")
 	numbers := flag.Bool("n", true, "Include numbers")
@@ -27,14 +26,10 @@ func main() {
 	}
 
 	rand.Seed(time.Now().UnixNano())
-
-	// Character sets
 	lowercase := "abcdefghijklmnopqrstuvwxyz"
 	uppercase := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	digit := "0123456789"
 	specialChars := "!@#$%^&*()_+-=[]{}"
-
-	// Build character pool
 	pool := lowercase + uppercase
 	if *numbers {
 		pool += digit
@@ -48,13 +43,11 @@ func main() {
 		return
 	}
 
-	// Generate password
 	password := make([]byte, *length)
 	for i := range password {
 		password[i] = pool[rand.Intn(len(pool))]
 	}
 
-	// Print result
 	fmt.Println("\n🔐 Generated Password:")
 	fmt.Println("━━━━━━━━━━━━━━━━━━━━━━")
 	fmt.Printf("  %s\n", string(password))
