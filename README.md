@@ -4,7 +4,9 @@
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go&logoColor=white)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-blue)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
 
 A simple, fast, and lightweight password generator CLI tool written in Go. Generate secure random passwords with custom length, special characters, and numbers.
 
@@ -36,11 +38,7 @@ go build -o passgen main.go
 sudo mv passgen /usr/local/bin/  # Linux/macOS
 ```
 
-### Option 3: Download Binary
-
-Download the pre-built binary for your platform from [Releases](https://github.com/atex-ovi/passgen/releases).
-
-## Usage
+## 🚀 Usage
 
 ### Basic Usage
 
